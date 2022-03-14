@@ -1,0 +1,642 @@
+{
+	"info": {
+		"_postman_id": "dad920da-4676-4fdf-8588-2c5aa8b40a18",
+		"name": "Deliverable2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createOrder.local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer\": \"607ead0bf851e70584f3bbb0\",\r\n    \"van\": \"607eae62f851e70584f3bbb2\",\r\n    \"item\": \"607d87e44258bb37f8de3a14\",\r\n    \"quantity\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer/order/create",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": ["customer", "order", "create"]
+				},
+				"description": "Add one new order to datatbase collection, orders"
+			},
+			"response": []
+		},
+		{
+			"name": "createOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer\": \"607ead0bf851e70584f3bbb0\",\r\n    \"van\": \"607eae62f851e70584f3bbb2\",\r\n    \"item\": \"607d87e44258bb37f8de3a14\",\r\n    \"quantity\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://project-t06-compsci-1.herokuapp.com/customer/order/create",
+					"protocol": "https",
+					"host": ["project-t06-compsci-1", "herokuapp", "com"],
+					"path": ["customer", "order", "create"]
+				},
+				"description": "Add one new order to datatbase collection, orders"
+			},
+			"response": [
+				{
+					"name": "createOrder",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer\": \"607ead0bf851e70584f3bbb0\",\r\n    \"van\": \"607eae62f851e70584f3bbb2\",\r\n    \"item\": \"607d87e44258bb37f8de3a14\",\r\n    \"quantity\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://project-t06-compsci-1.herokuapp.com/customer/order/create",
+							"protocol": "https",
+							"host": [
+								"project-t06-compsci-1",
+								"herokuapp",
+								"com"
+							],
+							"path": ["customer", "order", "create"]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "268"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"10c-378fTwmb+Hx4puSFZjjIN43Wapg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Apr 2021 12:31:16 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"pending\",\n    \"_id\": \"6082be148325ff0015346a29\",\n    \"customer\": \"607ead0bf851e70584f3bbb0\",\n    \"van\": \"607eae62f851e70584f3bbb2\",\n    \"lineItems\": [\n        {\n            \"quantity\": 3,\n            \"_id\": \"6082be148325ff0015346a2a\",\n            \"item\": \"607d87e44258bb37f8de3a14\"\n        }\n    ],\n    \"timePlaced\": \"2021-04-23T12:31:16.167Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "getMenu.local",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customer/menu",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": ["customer", "menu"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMenu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://project-t06-compsci-1.herokuapp.com/customer/menu",
+					"protocol": "https",
+					"host": ["project-t06-compsci-1", "herokuapp", "com"],
+					"path": ["customer", "menu"]
+				}
+			},
+			"response": [
+				{
+					"name": "getMenu",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://project-t06-compsci-1.herokuapp.com/customer/menu",
+							"protocol": "https",
+							"host": [
+								"project-t06-compsci-1",
+								"herokuapp",
+								"com"
+							],
+							"path": ["customer", "menu"]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1297"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"511-fUAfOjuttLfSJd2WGSvOrpjmj78\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Apr 2021 12:31:37 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"607d87e44258bb37f8de3a14\",\n        \"name\": \"Plain Biscuit\",\n        \"photo\": \"WSIqrH0fd9Y\",\n        \"price\": 3,\n        \"category\": \"Food\"\n    },\n    {\n        \"_id\": \"607d87e44258bb37f8de3a15\",\n        \"name\": \"Fancy Biscuit\",\n        \"photo\": \"Qaruw62_kmM\",\n        \"price\": 5,\n        \"category\": \"Food\"\n    },\n    {\n        \"_id\": \"607d87e44258bb37f8de3a16\",\n        \"name\": \"Latte\",\n        \"photo\": \"ad38qCSnjVc\",\n        \"price\": 4.5,\n        \"category\": \"Beverage\"\n    },\n    {\n        \"_id\": \"607d87e44258bb37f8de3a17\",\n        \"name\": \"Cappucino\",\n        \"photo\": \"lzkc2S1p3Rk\",\n        \"price\": 4.5,\n        \"category\": \"Beverage\"\n    },\n    {\n        \"_id\": \"607f123515c8cfb3b965b657\",\n        \"name\": \"Plain Biscuit\",\n        \"photo\": \"WSIqrH0fd9Y\",\n        \"price\": 3,\n        \"category\": \"Food\"\n    },\n    {\n        \"_id\": \"607f123515c8cfb3b965b658\",\n        \"name\": \"Fancy Biscuit\",\n        \"photo\": \"Qaruw62_kmM\",\n        \"price\": 5,\n        \"category\": \"Food\"\n    },\n    {\n        \"_id\": \"607f123515c8cfb3b965b659\",\n        \"name\": \"Latte\",\n        \"photo\": \"ad38qCSnjVc\",\n        \"price\": 4.5,\n        \"category\": \"Beverage\"\n    },\n    {\n        \"_id\": \"607f123515c8cfb3b965b65a\",\n        \"name\": \"Cappucino\",\n        \"photo\": \"lzkc2S1p3Rk\",\n        \"price\": 4.5,\n        \"category\": \"Beverage\"\n    },\n    {\n        \"_id\": \"607f123515c8cfb3b965b65b\",\n        \"name\": \"Long Black\",\n        \"photo\": \"rOCmAnsUHtQ\",\n        \"price\": 4.5,\n        \"category\": \"Beverage\"\n    },\n    {\n        \"_id\": \"607f123515c8cfb3b965b65c\",\n        \"name\": \"Flat White\",\n        \"photo\": \"eN7OXlrdF5o\",\n        \"price\": 5,\n        \"category\": \"Beverage\"\n    },\n    {\n        \"_id\": \"607f123515c8cfb3b965b65d\",\n        \"name\": \"Small Cake\",\n        \"photo\": \"IWw2J8Ratmk\",\n        \"price\": 3.5,\n        \"category\": \"Food\"\n    },\n    {\n        \"_id\": \"607f123515c8cfb3b965b65e\",\n        \"name\": \"Large Cake\",\n        \"photo\": \"_y5CCcYWTjU\",\n        \"price\": 6,\n        \"category\": \"Food\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "setFulfilled.local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vendor/current_orders/order_detail/set_fulfilled/6082ba6a0e73435388563a5d",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"current_orders",
+						"order_detail",
+						"set_fulfilled",
+						"6082ba6a0e73435388563a5d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setFulfilled",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://project-t06-compsci-1.herokuapp.com/vendor/current_orders/order_detail/set_fulfilled/6082ba6a0e73435388563a5d",
+					"protocol": "https",
+					"host": ["project-t06-compsci-1", "herokuapp", "com"],
+					"path": [
+						"vendor",
+						"current_orders",
+						"order_detail",
+						"set_fulfilled",
+						"6082ba6a0e73435388563a5d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "setFulfilled",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://project-t06-compsci-1.herokuapp.com/vendor/current_orders/order_detail/set_fulfilled/6082ba6a0e73435388563a5d",
+							"protocol": "https",
+							"host": [
+								"project-t06-compsci-1",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"vendor",
+								"current_orders",
+								"order_detail",
+								"set_fulfilled",
+								"6082ba6a0e73435388563a5d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "272"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"110-lxIJStTk5quYgmadd+XXOQevSBQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Apr 2021 12:33:04 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"status\": \"fulfilled\",\n        \"_id\": \"6082ba6a0e73435388563a5d\",\n        \"customer\": \"607ead0bf851e70584f3bbb0\",\n        \"van\": \"607eae62f851e70584f3bbb2\",\n        \"lineItems\": [\n            {\n                \"quantity\": 3,\n                \"_id\": \"6082ba6a0e73435388563a5e\",\n                \"item\": \"607d87e44258bb37f8de3a14\"\n            }\n        ],\n        \"timePlaced\": \"2021-04-23T12:15:38.875Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getItem.local",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customer/menu/item/607d87e44258bb37f8de3a14",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": [
+						"customer",
+						"menu",
+						"item",
+						"607d87e44258bb37f8de3a14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getItem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://project-t06-compsci-1.herokuapp.com/customer/menu/item/607d87e44258bb37f8de3a14",
+					"protocol": "https",
+					"host": ["project-t06-compsci-1", "herokuapp", "com"],
+					"path": [
+						"customer",
+						"menu",
+						"item",
+						"607d87e44258bb37f8de3a14"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getItem",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://project-t06-compsci-1.herokuapp.com/customer/menu/item/607d87e44258bb37f8de3a14",
+							"protocol": "https",
+							"host": [
+								"project-t06-compsci-1",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"customer",
+								"menu",
+								"item",
+								"607d87e44258bb37f8de3a14"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "180"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"b4-h6Y60cNVxC2w9BY1Eg7yWxcTgak\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Apr 2021 12:33:32 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"607d87e44258bb37f8de3a14\",\n    \"name\": \"Plain Biscuit\",\n    \"photo\": \"WSIqrH0fd9Y\",\n    \"tagline\": \"yum\",\n    \"description\": \"A small and simple yet delicious biscuit\",\n    \"price\": 3,\n    \"category\": \"Food\"\n}"
+				}
+			]
+		},
+		{
+			"name": "postVanLocation.local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"location\": \"newLocation\",\r\n    \"locDescription\": \"new description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vendor/settings/edit_location/607eae62f851e70584f3bbb2",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"settings",
+						"edit_location",
+						"607eae62f851e70584f3bbb2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postVanLocation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"location\": \"newLocation\",\r\n    \"locDescription\": \"new description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://project-t06-compsci-1.herokuapp.com/vendor/settings/edit_location/607eae62f851e70584f3bbb2",
+					"protocol": "https",
+					"host": ["project-t06-compsci-1", "herokuapp", "com"],
+					"path": [
+						"vendor",
+						"settings",
+						"edit_location",
+						"607eae62f851e70584f3bbb2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "postVanLocation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"location\": \"newLocation\",\r\n    \"locDescription\": \"new description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://project-t06-compsci-1.herokuapp.com/vendor/settings/edit_location/607eae62f851e70584f3bbb2",
+							"protocol": "https",
+							"host": [
+								"project-t06-compsci-1",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"vendor",
+								"settings",
+								"edit_location",
+								"607eae62f851e70584f3bbb2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "168"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"a8-I1MJY3hVY6hB4RofqaJlEt31JLs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Apr 2021 12:34:03 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"open\",\n    \"location\": \"newLocation\",\n    \"locDescription\": \"new description\",\n    \"_id\": \"607eae62f851e70584f3bbb2\",\n    \"username\": \"Tasty Trailer\",\n    \"password\": \"Password1\",\n    \"__v\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "currentOustanding.local",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vendor/current_orders/607eae62f851e70584f3bbb2",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"current_orders",
+						"607eae62f851e70584f3bbb2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "currentOustanding",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vendor/current_orders/607eae62f851e70584f3bbb2",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"current_orders",
+						"607eae62f851e70584f3bbb2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "currentOustanding.local Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://project-t06-compsci-1.herokuapp.com/vendor/current_orders/607eae62f851e70584f3bbb2",
+							"protocol": "https",
+							"host": [
+								"project-t06-compsci-1",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"vendor",
+								"current_orders",
+								"607eae62f851e70584f3bbb2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "820"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"334-aIU3GaI+fIpaGnSqgsKM6huE/rg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Apr 2021 12:40:39 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"status\": \"outstanding\",\n        \"_id\": \"6082ba6a0e73435388563a5d\",\n        \"customer\": \"607ead0bf851e70584f3bbb0\",\n        \"van\": \"607eae62f851e70584f3bbb2\",\n        \"lineItems\": [\n            {\n                \"quantity\": 3,\n                \"_id\": \"6082ba6a0e73435388563a5e\",\n                \"item\": \"607d87e44258bb37f8de3a14\"\n            }\n        ],\n        \"timePlaced\": \"2021-04-23T12:15:38.875Z\",\n        \"__v\": 0\n    },\n    {\n        \"status\": \"outstanding\",\n        \"_id\": \"6082ba6e0e73435388563a63\",\n        \"customer\": \"607ead0bf851e70584f3bbb0\",\n        \"van\": \"607eae62f851e70584f3bbb2\",\n        \"lineItems\": [\n            {\n                \"quantity\": 3,\n                \"_id\": \"6082ba6e0e73435388563a64\",\n                \"item\": \"607d87e44258bb37f8de3a14\"\n            }\n        ],\n        \"timePlaced\": \"2021-04-23T12:15:42.907Z\",\n        \"__v\": 0\n    },\n    {\n        \"status\": \"outstanding\",\n        \"_id\": \"6082bc90ac25cd5330072671\",\n        \"customer\": \"607ead0bf851e70584f3bbb0\",\n        \"van\": \"607eae62f851e70584f3bbb2\",\n        \"lineItems\": [\n            {\n                \"quantity\": 3,\n                \"_id\": \"6082bc90ac25cd5330072672\",\n                \"item\": \"607d87e44258bb37f8de3a14\"\n            }\n        ],\n        \"timePlaced\": \"2021-04-23T12:24:48.869Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}

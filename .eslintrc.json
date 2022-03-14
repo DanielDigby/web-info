@@ -1,0 +1,24 @@
+{
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es2021": true
+	},
+	"extends": ["plugin:security/recommended", "prettier"],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12
+	},
+	"plugins": ["security", "prettier"],
+	"rules": {
+		"prettier/prettier": [
+			"error",
+			{ "useTabs": true, "endOfLine": "auto" },
+			{
+				"usePrettierrc": true
+			}
+		]
+	}
+}
